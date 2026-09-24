@@ -1,0 +1,45 @@
+# params.yaml
+# Central configuration file for the Housing Price Prediction MLOps pipeline.
+# Every stage in dvc.yaml reads its configuration from here so that
+# experiments can be reproduced and tracked with `dvc exp` / `dvc repro`.
+
+data_ingestion:
+  raw_data_path: dataset/Housing.csv
+  raw_dir: data/raw
+  test_size: 0.3
+  random_state: 42
+
+data_preprocessing:
+  processed_dir: data/processed
+  # columns with yes/no values that get binary-encoded (1/0)
+  binary_cols:
+  - mainroad
+  - guestroom
+  - basement
+  - hotwaterheating
+  - airconditioning
+  - prefarea
+feature_engineering:
+  features_dir: data/features
+  # column that gets one-hot encoded
+  onehot_cols:
+  - furnishingstatus
+  create_area_per_bedroom: true
+  # engineered feature: bathrooms + bedrooms
+  create_total_rooms: true
+  scale_features: true
+
+model_building:
+  model_dir: models
+  model_name: model.pkl
+  n_estimators: 200
+  max_depth: 12
+  min_samples_split: 2
+  min_samples_leaf: 1
+  random_state: 42
+  target_column: price
+
+model_evaluation:
+  metrics_dir: metrics
+  metrics_file: metrics.json
+  target_column: price

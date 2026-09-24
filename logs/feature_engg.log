@@ -1,0 +1,24 @@
+2026-07-31 10:23:16,337 - feature_engg - DEBUG - Parameters retrieved from params.yaml
+2026-07-31 10:23:16,376 - feature_engg - DEBUG - Data loaded from data/processed\train.csv with shape (436, 13)
+2026-07-31 10:23:16,380 - feature_engg - DEBUG - Data loaded from data/processed\test.csv with shape (109, 13)
+2026-07-31 10:23:16,382 - feature_engg - DEBUG - Created feature 'area_per_bedroom'
+2026-07-31 10:23:16,384 - feature_engg - DEBUG - Created feature 'total_rooms'
+2026-07-31 10:23:16,385 - feature_engg - DEBUG - Created feature 'area_per_bedroom'
+2026-07-31 10:23:16,386 - feature_engg - DEBUG - Created feature 'total_rooms'
+2026-07-31 10:23:16,396 - feature_engg - DEBUG - One-hot encoded columns: ['furnishingstatus']
+2026-07-31 10:23:16,435 - feature_engg - DEBUG - Scaler fit on columns ['area', 'bedrooms', 'bathrooms', 'stories', 'mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'parking', 'prefarea', 'area_per_bedroom', 'total_rooms', 'furnishingstatus_semi-furnished', 'furnishingstatus_unfurnished'] and saved to data/features\scaler.pkl
+2026-07-31 10:23:16,447 - feature_engg - DEBUG - Data saved to data/features\train.csv
+2026-07-31 10:23:16,451 - feature_engg - DEBUG - Data saved to data/features\test.csv
+2026-07-31 10:23:16,451 - feature_engg - INFO - Feature engineering completed successfully.
+2026-08-14 10:00:37,776 - feature_engg - DEBUG - Parameters retrieved from params.yaml
+2026-08-14 10:00:37,809 - feature_engg - DEBUG - Data loaded from data/processed\train.csv with shape (381, 13)
+2026-08-14 10:00:37,812 - feature_engg - DEBUG - Data loaded from data/processed\test.csv with shape (164, 13)
+2026-08-14 10:00:37,814 - feature_engg - DEBUG - Created feature 'area_per_bedroom'
+2026-08-14 10:00:37,815 - feature_engg - DEBUG - Created feature 'total_rooms'
+2026-08-14 10:00:37,815 - feature_engg - DEBUG - Created feature 'area_per_bedroom'
+2026-08-14 10:00:37,816 - feature_engg - DEBUG - Created feature 'total_rooms'
+2026-08-14 10:00:37,826 - feature_engg - DEBUG - One-hot encoded columns: ['furnishingstatus']
+2026-08-14 10:00:37,877 - feature_engg - DEBUG - Scaler fit on columns ['area', 'bedrooms', 'bathrooms', 'stories', 'mainroad', 'guestroom', 'basement', 'hotwaterheating', 'airconditioning', 'parking', 'prefarea', 'area_per_bedroom', 'total_rooms', 'furnishingstatus_semi-furnished', 'furnishingstatus_unfurnished'] and saved to data/features\scaler.pkl
+2026-08-14 10:00:37,888 - feature_engg - DEBUG - Data saved to data/features\train.csv
+2026-08-14 10:00:37,893 - feature_engg - DEBUG - Data saved to data/features\test.csv
+2026-08-14 10:00:37,893 - feature_engg - INFO - Feature engineering completed successfully.

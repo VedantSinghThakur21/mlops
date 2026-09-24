@@ -1,0 +1,12 @@
+# requirements.txt
+# Runtime dependencies for the Dockerized FastAPI inference service
+# (app/main.py). scikit-learn is pinned to the exact version the shipped
+# models/model.pkl and data/features/scaler.pkl were fit with, to avoid
+# pickle-compatibility warnings/errors when unpickling.
+
+fastapi
+uvicorn[standard]
+pydantic
+pandas
+numpy
+scikit-learn

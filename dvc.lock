@@ -1,0 +1,145 @@
+schema: '2.0'
+stages:
+  data_ingestion:
+    cmd: python src/data_ingestion.py
+    deps:
+    - path: dataset/Housing.csv
+      hash: md5
+      md5: 801f8030dad1df22a53edfdbfa4e80f0
+      size: 29981
+    - path: src/data_ingestion.py
+      hash: md5
+      md5: 8e613f8fdd62d708fb856242079eddd1
+      size: 4269
+    params:
+      params.yaml:
+        data_ingestion.random_state: 42
+        data_ingestion.raw_data_path: dataset/Housing.csv
+        data_ingestion.raw_dir: data/raw
+        data_ingestion.test_size: 0.3
+    outs:
+    - path: data/raw/test.csv
+      hash: md5
+      md5: 264a7f3dfb7e9a9125e0a2d9d1714d18
+      size: 9094
+    - path: data/raw/train.csv
+      hash: md5
+      md5: 23b7e102fa94919507449603cd33a639
+      size: 21020
+  data_preprocessing:
+    cmd: python src/data_preprocessing.py
+    deps:
+    - path: data/raw/test.csv
+      hash: md5
+      md5: 264a7f3dfb7e9a9125e0a2d9d1714d18
+      size: 9094
+    - path: data/raw/train.csv
+      hash: md5
+      md5: 23b7e102fa94919507449603cd33a639
+      size: 21020
+    - path: src/data_preprocessing.py
+      hash: md5
+      md5: 36d4a16808ed13c48544d561b31b5f60
+      size: 4968
+    params:
+      params.yaml:
+        data_preprocessing.binary_cols:
+        - mainroad
+        - guestroom
+        - basement
+        - hotwaterheating
+        - airconditioning
+        - prefarea
+        data_preprocessing.processed_dir: data/processed
+    outs:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 20a3d078d2ec4de0aa76ad05b277f71b
+      size: 7797
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 9a20e899f613c6d21b8bf55f968fc73d
+      size: 17966
+  feature_engg:
+    cmd: python src/feature_engg.py
+    deps:
+    - path: data/processed/test.csv
+      hash: md5
+      md5: 20a3d078d2ec4de0aa76ad05b277f71b
+      size: 7797
+    - path: data/processed/train.csv
+      hash: md5
+      md5: 9a20e899f613c6d21b8bf55f968fc73d
+      size: 17966
+    - path: src/feature_engg.py
+      hash: md5
+      md5: 406831c4fd8fa15b59b67241e6831219
+      size: 5854
+    params:
+      params.yaml:
+        feature_engineering.create_area_per_bedroom: true
+        feature_engineering.create_total_rooms: true
+        feature_engineering.features_dir: data/features
+        feature_engineering.onehot_cols:
+        - furnishingstatus
+        feature_engineering.scale_features: true
+    outs:
+    - path: data/features/scaler.pkl
+      hash: md5
+      md5: 84ce2b7372fe74a8a887c3f33308f3b3
+      size: 1115
+    - path: data/features/test.csv
+      hash: md5
+      md5: 7a70306e7ee7105b24845822bc32a490
+      size: 50168
+    - path: data/features/train.csv
+      hash: md5
+      md5: dcf3dcd5221f3ec7272642c72912ed03
+      size: 116259
+  model_building:
+    cmd: python src/model_building.py
+    deps:
+    - path: data/features/train.csv
+      hash: md5
+      md5: dcf3dcd5221f3ec7272642c72912ed03
+      size: 116259
+    - path: src/model_building.py
+      hash: md5
+      md5: 91d9a7dd2111502f5ea201aeabd87ab0
+      size: 4018
+    params:
+      params.yaml:
+        model_building.max_depth: 12
+        model_building.min_samples_leaf: 1
+        model_building.min_samples_split: 2
+        model_building.n_estimators: 200
+        model_building.random_state: 42
+        model_building.target_column: price
+    outs:
+    - path: models/model.pkl
+      hash: md5
+      md5: ff0cad33f21ee6247578236c81eb9002
+      size: 6023104
+  model_evaluation:
+    cmd: python src/model_evaluation.py
+    deps:
+    - path: data/features/test.csv
+      hash: md5
+      md5: 7a70306e7ee7105b24845822bc32a490
+      size: 50168
+    - path: models/model.pkl
+      hash: md5
+      md5: ff0cad33f21ee6247578236c81eb9002
+      size: 6023104
+    - path: src/model_evaluation.py
+      hash: md5
+      md5: 47ad5910344ebe80bd463d33ce3c9b5e
+      size: 4521
+    params:
+      params.yaml:
+        model_evaluation.target_column: price
+    outs:
+    - path: metrics/metrics.json
+      hash: md5
+      md5: a9f0fc2ad4a895c87ccad77a570a4046
+      size: 136

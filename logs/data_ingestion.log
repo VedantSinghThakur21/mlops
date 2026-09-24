@@ -1,0 +1,94 @@
+2026-07-31 10:23:09,684 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-07-31 10:23:09,693 - data_ingestion - DEBUG - Data loaded from dataset/Housing.csv with shape (545, 13)
+2026-07-31 10:23:09,695 - data_ingestion - DEBUG - Data validation passed. Null counts:
+price               0
+area                0
+bedrooms            0
+bathrooms           0
+stories             0
+mainroad            0
+guestroom           0
+basement            0
+hotwaterheating     0
+airconditioning     0
+parking             0
+prefarea            0
+furnishingstatus    0
+dtype: int64
+2026-07-31 10:23:09,707 - data_ingestion - INFO - Data split into train (436 rows) and test (109 rows)
+2026-07-31 10:23:09,716 - data_ingestion - DEBUG - Train data saved to data/raw\train.csv
+2026-07-31 10:23:09,716 - data_ingestion - DEBUG - Test data saved to data/raw\test.csv
+2026-07-31 10:23:09,716 - data_ingestion - INFO - Data ingestion completed successfully.
+2026-08-14 10:00:30,843 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-08-14 10:00:30,870 - data_ingestion - DEBUG - Data loaded from dataset/Housing.csv with shape (545, 13)
+2026-08-14 10:00:30,873 - data_ingestion - DEBUG - Data validation passed. Null counts:
+price               0
+area                0
+bedrooms            0
+bathrooms           0
+stories             0
+mainroad            0
+guestroom           0
+basement            0
+hotwaterheating     0
+airconditioning     0
+parking             0
+prefarea            0
+furnishingstatus    0
+dtype: int64
+2026-08-14 10:00:30,885 - data_ingestion - INFO - Data split into train (381 rows) and test (164 rows)
+2026-08-14 10:00:30,896 - data_ingestion - DEBUG - Train data saved to data/raw\train.csv
+2026-08-14 10:00:30,896 - data_ingestion - DEBUG - Test data saved to data/raw\test.csv
+2026-08-14 10:00:30,896 - data_ingestion - INFO - Data ingestion completed successfully.
+2026-09-10 10:07:24,689 - data_ingestion - ERROR - Raw data file not found at: C:\Users\Riddhim\AppData\Local\Temp\tmp9ves5xhu\missing.csv
+2026-09-10 10:07:24,766 - data_ingestion - DEBUG - Data loaded from C:\Users\Riddhim\AppData\Local\Temp\tmp8z8qmbgb\Housing.csv with shape (6, 3)
+2026-09-10 10:07:24,786 - data_ingestion - ERROR - Params file not found: C:\Users\Riddhim\AppData\Local\Temp\tmpyigvq03q\missing.yaml
+2026-09-10 10:07:24,817 - data_ingestion - ERROR - YAML error while parsing params file: while parsing a flow sequence
+  in "C:\Users\Riddhim\AppData\Local\Temp\tmpyv24zc30\bad.yaml", line 1, column 6
+expected ',' or ']', but got '<stream end>'
+  in "C:\Users\Riddhim\AppData\Local\Temp\tmpyv24zc30\bad.yaml", line 2, column 1
+2026-09-10 10:07:24,849 - data_ingestion - DEBUG - Parameters retrieved from C:\Users\Riddhim\AppData\Local\Temp\tmp5n8824qt\params.yaml
+2026-09-10 10:07:24,865 - data_ingestion - DEBUG - Train data saved to C:\Users\Riddhim\AppData\Local\Temp\tmp5rwvnxtr\raw_out\train.csv
+2026-09-10 10:07:24,866 - data_ingestion - DEBUG - Test data saved to C:\Users\Riddhim\AppData\Local\Temp\tmp5rwvnxtr\raw_out\test.csv
+2026-09-10 10:07:24,968 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-09-10 10:07:24,972 - data_ingestion - DEBUG - Data loaded from C:\Users\Riddhim\AppData\Local\Temp\tmpixfftlfq\Housing.csv with shape (6, 3)
+2026-09-10 10:07:24,974 - data_ingestion - DEBUG - Data validation passed. Null counts:
+price       0
+area        0
+mainroad    0
+dtype: int64
+2026-09-10 10:07:24,991 - data_ingestion - INFO - Data split into train (4 rows) and test (2 rows)
+2026-09-10 10:07:24,996 - data_ingestion - DEBUG - Train data saved to C:\Users\Riddhim\AppData\Local\Temp\tmpixfftlfq\raw\train.csv
+2026-09-10 10:07:24,996 - data_ingestion - DEBUG - Test data saved to C:\Users\Riddhim\AppData\Local\Temp\tmpixfftlfq\raw\test.csv
+2026-09-10 10:07:24,996 - data_ingestion - INFO - Data ingestion completed successfully.
+2026-09-10 10:07:25,044 - data_ingestion - DEBUG - Data validation passed. Null counts:
+price       0
+area        0
+mainroad    0
+dtype: int64
+2026-09-24 23:59:57,283 - data_ingestion - ERROR - Raw data file not found at: C:\Users\VEDANT~1\AppData\Local\Temp\tmpj1xvyntz\missing.csv
+2026-09-24 23:59:57,312 - data_ingestion - DEBUG - Data loaded from C:\Users\VEDANT~1\AppData\Local\Temp\tmpt38vaobc\Housing.csv with shape (6, 3)
+2026-09-24 23:59:57,319 - data_ingestion - ERROR - Params file not found: C:\Users\VEDANT~1\AppData\Local\Temp\tmptav_h95w\missing.yaml
+2026-09-24 23:59:57,330 - data_ingestion - ERROR - YAML error while parsing params file: while parsing a flow sequence
+  in "C:\Users\VEDANT~1\AppData\Local\Temp\tmpsklb0hhf\bad.yaml", line 1, column 6
+expected ',' or ']', but got '<stream end>'
+  in "C:\Users\VEDANT~1\AppData\Local\Temp\tmpsklb0hhf\bad.yaml", line 2, column 1
+2026-09-24 23:59:57,339 - data_ingestion - DEBUG - Parameters retrieved from C:\Users\VEDANT~1\AppData\Local\Temp\tmpf77qky9n\params.yaml
+2026-09-24 23:59:57,349 - data_ingestion - DEBUG - Train data saved to C:\Users\VEDANT~1\AppData\Local\Temp\tmph7qovrxb\raw_out\train.csv
+2026-09-24 23:59:57,350 - data_ingestion - DEBUG - Test data saved to C:\Users\VEDANT~1\AppData\Local\Temp\tmph7qovrxb\raw_out\test.csv
+2026-09-24 23:59:57,362 - data_ingestion - DEBUG - Parameters retrieved from params.yaml
+2026-09-24 23:59:57,364 - data_ingestion - DEBUG - Data loaded from C:\Users\VEDANT~1\AppData\Local\Temp\tmph3d3pst8\Housing.csv with shape (6, 3)
+2026-09-24 23:59:57,365 - data_ingestion - DEBUG - Data validation passed. Null counts:
+price       0
+area        0
+mainroad    0
+dtype: int64
+2026-09-24 23:59:57,373 - data_ingestion - INFO - Data split into train (4 rows) and test (2 rows)
+2026-09-24 23:59:57,376 - data_ingestion - DEBUG - Train data saved to C:\Users\VEDANT~1\AppData\Local\Temp\tmph3d3pst8\raw\train.csv
+2026-09-24 23:59:57,376 - data_ingestion - DEBUG - Test data saved to C:\Users\VEDANT~1\AppData\Local\Temp\tmph3d3pst8\raw\test.csv
+2026-09-24 23:59:57,376 - data_ingestion - INFO - Data ingestion completed successfully.
+2026-09-24 23:59:57,387 - data_ingestion - DEBUG - Data validation passed. Null counts:
+price       0
+area        0
+mainroad    0
+dtype: int64

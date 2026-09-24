@@ -1,0 +1,18 @@
+2026-07-31 10:23:26,611 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2026-07-31 10:23:27,201 - model_evaluation - DEBUG - Model loaded from models\model.pkl
+2026-07-31 10:23:27,241 - model_evaluation - DEBUG - Data loaded from data/features\test.csv with shape (109, 16)
+2026-07-31 10:23:27,454 - model_evaluation - DEBUG - Computed metrics: {'mae': 1052115.3689755362, 'mse': 2001648044345.1194, 'rmse': 1414796.1140549968, 'r2_score': 0.6039924371836176}
+2026-07-31 10:23:27,455 - model_evaluation - DEBUG - Metrics saved to metrics\metrics.json
+2026-07-31 10:23:27,455 - model_evaluation - INFO - Model evaluation completed successfully. Metrics: {'mae': 1052115.3689755362, 'mse': 2001648044345.1194, 'rmse': 1414796.1140549968, 'r2_score': 0.6039924371836176}
+2026-07-31 10:33:50,570 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2026-07-31 10:33:51,079 - model_evaluation - DEBUG - Model loaded from models\model.pkl
+2026-07-31 10:33:51,090 - model_evaluation - DEBUG - Data loaded from data/features\test.csv with shape (109, 16)
+2026-07-31 10:33:51,244 - model_evaluation - DEBUG - Computed metrics: {'mae': 1062616.0639027501, 'mse': 2027032894920.6797, 'rmse': 1423739.0543637832, 'r2_score': 0.5989702791487497}
+2026-07-31 10:33:51,246 - model_evaluation - DEBUG - Metrics saved to metrics\metrics.json
+2026-07-31 10:33:51,246 - model_evaluation - INFO - Model evaluation completed successfully. Metrics: {'mae': 1062616.0639027501, 'mse': 2027032894920.6797, 'rmse': 1423739.0543637832, 'r2_score': 0.5989702791487497}
+2026-08-14 10:00:48,246 - model_evaluation - DEBUG - Parameters retrieved from params.yaml
+2026-08-14 10:00:48,687 - model_evaluation - DEBUG - Model loaded from models\model.pkl
+2026-08-14 10:00:48,726 - model_evaluation - DEBUG - Data loaded from data/features\test.csv with shape (164, 16)
+2026-08-14 10:00:48,926 - model_evaluation - DEBUG - Computed metrics: {'mae': 989568.9875478158, 'mse': 1996211795819.4233, 'rmse': 1412873.5951313633, 'r2_score': 0.5364536806916728}
+2026-08-14 10:00:48,929 - model_evaluation - DEBUG - Metrics saved to metrics\metrics.json
+2026-08-14 10:00:48,929 - model_evaluation - INFO - Model evaluation completed successfully. Metrics: {'mae': 989568.9875478158, 'mse': 1996211795819.4233, 'rmse': 1412873.5951313633, 'r2_score': 0.5364536806916728}

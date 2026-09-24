@@ -1,0 +1,2 @@
+2026-09-18 09:34:37,753 - app - INFO - Model loaded from models/model.pkl
+2026-09-18 09:34:37,754 - app - INFO - Scaler loaded from data/features/scaler.pkl

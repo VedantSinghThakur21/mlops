@@ -1,0 +1,72 @@
+2026-07-31 10:23:11,908 - data_preprocessing - DEBUG - Parameters retrieved from params.yaml
+2026-07-31 10:23:11,941 - data_preprocessing - DEBUG - Data loaded from data/raw\train.csv with shape (436, 13)
+2026-07-31 10:23:11,945 - data_preprocessing - DEBUG - Data loaded from data/raw\test.csv with shape (109, 13)
+2026-07-31 10:23:11,949 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-07-31 10:23:11,954 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-07-31 10:23:11,957 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-07-31 10:23:11,957 - data_preprocessing - DEBUG - Binary encoded column 'guestroom'
+2026-07-31 10:23:11,991 - data_preprocessing - DEBUG - Binary encoded column 'basement'
+2026-07-31 10:23:11,992 - data_preprocessing - DEBUG - Binary encoded column 'hotwaterheating'
+2026-07-31 10:23:11,993 - data_preprocessing - DEBUG - Binary encoded column 'airconditioning'
+2026-07-31 10:23:11,993 - data_preprocessing - DEBUG - Binary encoded column 'prefarea'
+2026-07-31 10:23:11,994 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-07-31 10:23:11,995 - data_preprocessing - DEBUG - Binary encoded column 'guestroom'
+2026-07-31 10:23:11,996 - data_preprocessing - DEBUG - Binary encoded column 'basement'
+2026-07-31 10:23:11,997 - data_preprocessing - DEBUG - Binary encoded column 'hotwaterheating'
+2026-07-31 10:23:11,998 - data_preprocessing - DEBUG - Binary encoded column 'airconditioning'
+2026-07-31 10:23:11,999 - data_preprocessing - DEBUG - Binary encoded column 'prefarea'
+2026-07-31 10:23:12,007 - data_preprocessing - DEBUG - Data saved to data/processed\train.csv
+2026-07-31 10:23:12,011 - data_preprocessing - DEBUG - Data saved to data/processed\test.csv
+2026-07-31 10:23:12,011 - data_preprocessing - INFO - Data preprocessing completed successfully.
+2026-08-14 10:00:33,440 - data_preprocessing - DEBUG - Parameters retrieved from params.yaml
+2026-08-14 10:00:33,479 - data_preprocessing - DEBUG - Data loaded from data/raw\train.csv with shape (381, 13)
+2026-08-14 10:00:33,501 - data_preprocessing - DEBUG - Data loaded from data/raw\test.csv with shape (164, 13)
+2026-08-14 10:00:33,570 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-08-14 10:00:33,580 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-08-14 10:00:33,583 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-08-14 10:00:33,584 - data_preprocessing - DEBUG - Binary encoded column 'guestroom'
+2026-08-14 10:00:33,585 - data_preprocessing - DEBUG - Binary encoded column 'basement'
+2026-08-14 10:00:33,585 - data_preprocessing - DEBUG - Binary encoded column 'hotwaterheating'
+2026-08-14 10:00:33,586 - data_preprocessing - DEBUG - Binary encoded column 'airconditioning'
+2026-08-14 10:00:33,587 - data_preprocessing - DEBUG - Binary encoded column 'prefarea'
+2026-08-14 10:00:33,587 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-08-14 10:00:33,588 - data_preprocessing - DEBUG - Binary encoded column 'guestroom'
+2026-08-14 10:00:33,588 - data_preprocessing - DEBUG - Binary encoded column 'basement'
+2026-08-14 10:00:33,589 - data_preprocessing - DEBUG - Binary encoded column 'hotwaterheating'
+2026-08-14 10:00:33,591 - data_preprocessing - DEBUG - Binary encoded column 'airconditioning'
+2026-08-14 10:00:33,591 - data_preprocessing - DEBUG - Binary encoded column 'prefarea'
+2026-08-14 10:00:33,600 - data_preprocessing - DEBUG - Data saved to data/processed\train.csv
+2026-08-14 10:00:33,606 - data_preprocessing - DEBUG - Data saved to data/processed\test.csv
+2026-08-14 10:00:33,606 - data_preprocessing - INFO - Data preprocessing completed successfully.
+2026-09-10 10:07:25,077 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-09-10 10:07:25,082 - data_preprocessing - WARNING - Binary column 'mainroad' not found in dataframe
+2026-09-10 10:07:25,101 - data_preprocessing - DEBUG - Dropped 1 duplicate rows
+2026-09-10 10:07:25,113 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-09-10 10:07:25,116 - data_preprocessing - DEBUG - Filled missing values in 'cat' with mode yes
+2026-09-10 10:07:25,125 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-09-10 10:07:25,132 - data_preprocessing - DEBUG - Filled missing values in 'a' with median 2.0
+2026-09-10 10:07:25,143 - data_preprocessing - DEBUG - Dropped 1 duplicate rows
+2026-09-10 10:07:25,146 - data_preprocessing - DEBUG - Filled missing values in 'price' with median 200000.0
+2026-09-10 10:07:25,147 - data_preprocessing - DEBUG - Filled missing values in 'area' with median 1500.0
+2026-09-10 10:07:25,148 - data_preprocessing - DEBUG - Filled missing values in 'mainroad' with mode yes
+2026-09-10 10:07:25,150 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-09-10 10:07:25,150 - data_preprocessing - DEBUG - Binary encoded column 'guestroom'
+2026-09-10 10:07:25,157 - data_preprocessing - ERROR - File not found: C:\Users\Riddhim\AppData\Local\Temp\tmpo8rxyjar\missing.csv
+2026-09-10 10:07:25,341 - data_preprocessing - DEBUG - Data loaded from C:\Users\Riddhim\AppData\Local\Temp\tmpxcbzo5a1\train.csv with shape (5, 4)
+2026-09-10 10:07:25,353 - data_preprocessing - DEBUG - Data saved to C:\Users\Riddhim\AppData\Local\Temp\tmpwm_3qt_d\nested\out.csv
+2026-09-24 23:59:57,412 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-09-24 23:59:57,417 - data_preprocessing - WARNING - Binary column 'mainroad' not found in dataframe
+2026-09-24 23:59:57,426 - data_preprocessing - DEBUG - Dropped 1 duplicate rows
+2026-09-24 23:59:57,433 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-09-24 23:59:57,435 - data_preprocessing - DEBUG - Filled missing values in 'cat' with mode yes
+2026-09-24 23:59:57,442 - data_preprocessing - DEBUG - Dropped 0 duplicate rows
+2026-09-24 23:59:57,446 - data_preprocessing - DEBUG - Filled missing values in 'a' with median 2.0
+2026-09-24 23:59:57,452 - data_preprocessing - DEBUG - Dropped 1 duplicate rows
+2026-09-24 23:59:57,453 - data_preprocessing - DEBUG - Filled missing values in 'price' with median 200000.0
+2026-09-24 23:59:57,455 - data_preprocessing - DEBUG - Filled missing values in 'area' with median 1500.0
+2026-09-24 23:59:57,458 - data_preprocessing - DEBUG - Filled missing values in 'mainroad' with mode yes
+2026-09-24 23:59:57,459 - data_preprocessing - DEBUG - Binary encoded column 'mainroad'
+2026-09-24 23:59:57,460 - data_preprocessing - DEBUG - Binary encoded column 'guestroom'
+2026-09-24 23:59:57,465 - data_preprocessing - ERROR - File not found: C:\Users\VEDANT~1\AppData\Local\Temp\tmppsi1bqqe\missing.csv
+2026-09-24 23:59:57,474 - data_preprocessing - DEBUG - Data loaded from C:\Users\VEDANT~1\AppData\Local\Temp\tmpf4ilhm1i\train.csv with shape (5, 4)
+2026-09-24 23:59:57,480 - data_preprocessing - DEBUG - Data saved to C:\Users\VEDANT~1\AppData\Local\Temp\tmpp_nozg71\nested\out.csv

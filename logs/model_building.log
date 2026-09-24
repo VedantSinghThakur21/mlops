@@ -1,0 +1,15 @@
+2026-07-31 10:23:21,119 - model_building - DEBUG - Parameters retrieved from params.yaml
+2026-07-31 10:23:21,154 - model_building - DEBUG - Data loaded from data/features\train.csv with shape (436, 16)
+2026-07-31 10:23:21,725 - model_building - DEBUG - Model training completed with params: {'model_dir': 'models', 'model_name': 'model.pkl', 'n_estimators': 200, 'max_depth': 12, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'target_column': 'price'}
+2026-07-31 10:23:21,740 - model_building - DEBUG - Model saved to models\model.pkl
+2026-07-31 10:23:21,741 - model_building - INFO - Model building completed successfully.
+2026-07-31 10:33:45,001 - model_building - DEBUG - Parameters retrieved from params.yaml
+2026-07-31 10:33:45,011 - model_building - DEBUG - Data loaded from data/features\train.csv with shape (436, 16)
+2026-07-31 10:33:46,186 - model_building - DEBUG - Model training completed with params: {'model_dir': 'models', 'model_name': 'model.pkl', 'n_estimators': 500, 'max_depth': 20, 'min_samples_split': 4, 'min_samples_leaf': 2, 'random_state': 42, 'target_column': 'price'}
+2026-07-31 10:33:46,207 - model_building - DEBUG - Model saved to models\model.pkl
+2026-07-31 10:33:46,207 - model_building - INFO - Model building completed successfully.
+2026-08-14 10:00:42,922 - model_building - DEBUG - Parameters retrieved from params.yaml
+2026-08-14 10:00:42,957 - model_building - DEBUG - Data loaded from data/features\train.csv with shape (381, 16)
+2026-08-14 10:00:43,572 - model_building - DEBUG - Model training completed with params: {'model_dir': 'models', 'model_name': 'model.pkl', 'n_estimators': 200, 'max_depth': 12, 'min_samples_split': 2, 'min_samples_leaf': 1, 'random_state': 42, 'target_column': 'price'}
+2026-08-14 10:00:43,585 - model_building - DEBUG - Model saved to models\model.pkl
+2026-08-14 10:00:43,585 - model_building - INFO - Model building completed successfully.
