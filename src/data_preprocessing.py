@@ -83,7 +83,7 @@ def clean_data(df: pd.DataFrame) -> pd.DataFrame:
             logger.debug("Filled missing values in '%s' with median %s", col, median_val)
 
     # Categorical columns: fill missing values with mode
-    categorical_cols = df.select_dtypes(include=["object", "str"]).columns
+    categorical_cols = df.select_dtypes(include=["object"]).columns
     for col in categorical_cols:
         if df[col].isnull().sum() > 0:
             mode_val = df[col].mode()[0]
